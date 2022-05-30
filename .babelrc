@@ -1,10 +1,11 @@
 {
   "presets": [
-    "@emotion/babel-preset-css-prop",
-    "react-app"
+    // "@babel/preset-env"
+    "@babel/preset-react"
+    // "react-app"
   ],
   "plugins": [
-    "react-hot-loader/babel",
-    "@emotion"
+    // "@babel/plugin-proposal-class-properties",
+    "react-hot-loader/babel"
   ]
 }

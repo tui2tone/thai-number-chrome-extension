@@ -13,8 +13,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": false,
-    "jsx": "react",
-    "types": ["webpack-env", "chrome"]
+    "jsx": "react"
   },
   "include": ["src"],
   "exclude": ["build", "node_modules"]
