@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "@emotion/babel-preset-css-prop",
+    "react-app"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@emotion"
+  ]
+}

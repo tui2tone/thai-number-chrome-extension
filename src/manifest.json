@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Thai Number Extension",
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    }
+  ],
+  "oauth2": {
+    "client_id": "1038650295989-vd4ogb233pk2480pp64v19rq7am8onqj.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo"
+    ]
+  },
+  "devtools_page": "devtools.html",
+  "web_accessible_resources": [],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.firebase.com https://apis.google.com https://*.firebaseio.com https://*.firebaseio.com; object-src 'self'; "
+}
